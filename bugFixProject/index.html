@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Incorrect: Incorrect file path -->
+    <link rel="stylesheet" href="styles.css" />
+    <!--filepath was wrong. solved.-->
+    <!-- Console error: Failed to load resource: net::ERR_FILE_NOT_FOUND -->
+
+    <title>Debugging 101</title>
+  </head>
+  <body>
+    <!-- Look at the name of this class, is it in the CSS File? -->
+    <!--container misspelled in stylesheet. solved-->
+    <div class="container">
+      <h1>Welcome to Debugging 101!</h1>
+      <!--missing p tag. solved-->
+      <p>Let's learn how to debug our code.</p>
+    </div>
+
+    <input type="text" id="output" placeholder="This is an output" />
+
+    <!-- Incorrect: missing closing </div> tag -->
+    <div>
+      <p>This is a paragraph inside a div.</p>
+    </div>
+    <!--Missing p closing tag. solved-->
+    <!--Missing div closing tag. solved-->
+    <!-- Console warning: Unclosed tag -->
+
+    <!-- Incorrect: style attribute missing quotation marks -->
+    <p style="color: red">This text is red.</p>
+    <!--Style attribute missing quotes. solved-->
+    <!-- Console error: Invalid or unexpected token -->
+
+    <!-- React-specific issue with incorrect attribute name -->
+    <div class="container">Hello World</div>
+    <!--Attribute class misspelled. solved-->
+    <!-- Console error in React: Unknown DOM property "classnme" -->
+
+    <!-- Incorrect: Loading HTTP resource on an HTTPS page -->
+    <!-- update this image to http://placehold.co/400x400 -->
+    <img src="http://placehold.co/400x400" alt="Example Image" />
+    <!--image updated. solved-->
+    <!-- Console error: Mixed Content: The page was loaded over HTTPS, but requested an insecure image -->
+
+    <!-- include the JS file in the src string below this line -->
+    <script src="index.js"></script>
+    <!--scr missing. solved-->
+  </body>
+</html>
